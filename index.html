@@ -4,72 +4,97 @@
   <meta charset="UTF-8">
   <meta name="description" content="PaperBox es una página para crear reseñas y compartir experiencias lectoras">
   <title>PaperBox</title>
-  <link href="assets/logo.svg" rel="icon">
-  <link href="css/estilo.css" rel="stylesheet">
+  <link href="/assets/logo.svg" rel="icon">
+  <link href="/css/estilo.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <section>
       <h1>
-        <img src="assets/logo.svg" height=60>
-        <a href="index.html">PaperBox</a>
+        <img src="/assets/logo.svg" height=60>
+        <a href="/index.html">PaperBox</a>
       </h1>
       <nav>
-        <ul>
-          <li>
-            <a href="catalogo.html">Catálogo</a>
-          </li>
-          <li>
-            <a href="login.html">Login</a>
-          </li>
-          <li>
-            <a href="aboutus.html">Nosotros</a>
-          </li>
-        </ul>
+        <a href="/pages/perfil.html">Perfil</a>
+        <a href="/pages/catalogo.html">Catálogo</a>
+        <a href="/pages/amigos.html">Amigos</a>
       </nav>
       <form>
         <input type="text" inputmode="search">
         <input type="submit" value="Buscar">
       </form>
+      <button>Log</button>
     </section>
   </header>
   <main>
     <h2>Un espacio para compartir tus experiencias lectoras</h2>
-    <a href="registro.html">Registrate!</a>
+    <a href="/pages/registro.html">Registrate!</a>
     <section class=carrusel>
+      <h2>Recomendados</h2>
       <ul>
         <li>
-          <img src="img/dorian.jpg" width=300 alt="El retrato de Dorian Gray"/>
+          <a href="/pages/libros/el-retrato-de-dorian-gray.html">
+            <img src="/img/dorian.jpg" width=300 alt="El retrato de Dorian Gray"/>
+          </a>
         </li>
         <li>
-          <img src="img/meditaciones.jpg" width=300 alt="Meditaciones"/>
+          <a href="/pages/libros/meditaciones.html">
+            <img src="/img/meditaciones.jpg" width=300 alt="Meditaciones"/>
+          </a>
         </li>
         <li>
-          <img src="img/mobydick.jpg" width=300 alt="Moby Dick"/>
+          <a href="/pages/libros/moby-dick.html">
+            <img src="/img/mobydick.jpg" width=300 alt="Moby Dick"/>
+          </a>
         </li>
       </ul>
     </section>
     <section class="recomendados">
+      <h2>Recomendados</h2>
       <ul>
         <li>
-          <img src="img/dorian.jpg" width=300 alt="El retrato de Dorian Gray"/>
+          <img src="/img/dorian.jpg" width=300 alt="El retrato de Dorian Gray"/>
         </li>
         <li>
-          <img src="img/meditaciones.jpg" width=300 alt="Meditaciones"/>
+          <img src="/img/meditaciones.jpg" width=300 alt="Meditaciones"/>
         </li>
         <li>
-          <img src="img/mobydick.jpg" width=300 alt="Moby Dick"/>
+          <img src="/img/mobydick.jpg" width=300 alt="Moby Dick"/>
         </li>
       </ul>
     </section>
-    <section class="actividad-amigos">
-      <article class="">
-        <img/>
-        <h3>Mengano</h3>
-
+    <section class="actividad-popular">
+      <article class="post">
+        <img href="/assets/img-perfil1.png"/>
+        <a href="/pages/personas/raton-de-biblioteca.html">
+          <h3>Ratón de Biblioteca</h3>
+        </a>
+        <a href="/pages/libros/moby-dick.html">
+          <img src="/img/mobydick.jpg" width=20 alt="Moby Dick"/>
+          <h2>Moby Dick</h3>
+        </a>
+        <p>Ismael en la ciudad: "Un asco la sociedad. Un asco la vida. Ojalá zarpar al mar y acabarlo todo."</p>
+        <p>Ismael después de dormir desnudo en la misma cama que Queequeg: "Tal vez la vida es bella..."</p>
+        <a href="/pages/posts/post1.html"><time datetime="2026-09-21T20:00:00">20:00</time></a>
       </article>
     </section>
-
   </main>
-
+  <footer>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/paperbox"><i>instagram</i></a>
+      </li>
+      <li>
+        <a href="https://es.wikipedia.org/wiki/twitter"><i>twitter</i></a>
+      </li>
+      <li>
+        <a href="https://www.discord.com"><i>discord</i></a>
+      </li>
+    </ul>
+    <a href="/pages/terminos-y-condiciones.html">Términos y Condiciones</a>
+    <a href="/pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+    <a href="/pages/ayuda.html">Ayuda</a>
+    <a href="/pages/nosotros.html">Nosotros</a>
+    PaperBox 2026
+  </footer>
 </body>
