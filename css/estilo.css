@@ -1,7 +1,33 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+header section {
+    /* Esto corresponde a básicamente todo el HEADER. */
+    /* Para hacerlo un contenedor flexible y alinear elementos mejor. */
+    display: flex;
+    /* Para separar cada item, solo teniendo espacio entre ellos. */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #070645;
+}
+
+header h1 {
+    /* Esto corresponde al titulo de la pagina y al logo. */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+header nav,
+header form {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+header a {
+    /* Solo para todo el texto del header.*/
+    text-decoration: none;
     color: antiquewhite;
-    background-color: rgb(7, 1, 68);
 }
 
 header {
@@ -37,3 +63,16 @@ header {
 }
 
 
+header nav a:hover {
+    /* Los items de header cuando les paso el ratón por arriba.*/
+    color: #ff0000;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    background-color: #062445;
+    margin: 0;
+    padding: 0;
+
+}
