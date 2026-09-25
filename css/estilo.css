@@ -51,21 +51,25 @@ header {
     gap: 24px;
 }
 
-.footer ul li a {
 
-    font-size: 15px;
-   
-}
-
-.footer ul li a:hover {
-    color: #4e0a0a;
-    /* Las redes se ponen blancas al pasar el mouse */
-}
 
 
 header nav a:hover {
     /* Los items de header cuando les paso el ratón por arriba.*/
     color: #ff0000;
+}
+
+.link-social {
+    text-decoration: none;
+    color: red;
+    display: inline-block; /*permite que se mueva y aun asi mantenga su espacio*/
+    transition: transform 0.2s ease;
+    font-size: 15px;
+}
+
+.link-social:hover{
+    color: #00e054;
+    transform: translateY(-2px);
 }
 
 body {
