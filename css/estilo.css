@@ -1,4 +1,11 @@
+header {
+    background-color: #070645;
+    width: 100%;
+}
+
 header section {
+    max-width: 950px;
+    margin: 0 auto;
     /* Esto corresponde a básicamente todo el HEADER. */
     /* Para hacerlo un contenedor flexible y alinear elementos mejor. */
     display: flex;
@@ -21,6 +28,8 @@ header nav,
 header form {
     display: flex;
     align-items: center;
+    font-size: 15px;
+    font-weight: bold;
     gap: 25px;
 }
 
@@ -78,5 +87,58 @@ body {
     background-color: #062445;
     margin: 0;
     padding: 0;
+}
 
+#log {
+    padding: 5px 10px;
+    background-color: green;
+    font-size: 15px;
+    font-weight: bold;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#log:hover {
+    background-color: rgb(0, 90, 0);
+    color: rgb(231, 218, 200);
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+#search input[type="text"] {
+    padding: 3px 0px;
+    background-color: rgb(160, 160, 160);
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 15px;
+}
+
+#search input[type="text"]:hover {
+    background-color: rgb(145, 145, 145);
+}
+
+#search input[type="text"]:focus {
+    background-color: white;
+    color:black;
+    border-color:black;
+}
+
+#search button[type="submit"] {
+    padding: 2px 5px;
+    background-color: rgb(200, 200, 200);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#search button[type="submit"]:hover {
+     background-color: rgb(185, 185, 185);
 }
