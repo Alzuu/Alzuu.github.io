@@ -7,10 +7,6 @@
   <title>PaperBox</title>
   <link href="assets/logo.svg" rel="icon">
   <link href="css/estilo.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
@@ -40,25 +36,51 @@
   <main>
     <h2>Un espacio para compartir tus experiencias lectoras</h2>
     <a href="pages/registro.html">Registrate!</a>
-    <section class=carrusel>
-      <h2>Recomendados</h2>
-      <ul>
-        <li>
-          <a href="pages/libros/el-retrato-de-dorian-gray.html">
-            <img src="img/dorian.jpg" width=300 alt="El retrato de Dorian Gray" />
-          </a>
-        </li>
-        <li>
-          <a href="pages/libros/meditaciones.html">
-            <img src="img/meditaciones.jpg" width=300 alt="Meditaciones" />
-          </a>
-        </li>
-        <li>
-          <a href="pages/libros/moby-dick.html">
-            <img src="img/mobydick.jpg" width=300 alt="Moby Dick" />
-          </a>
-        </li>
-      </ul>
+    <section class="carrusel"> <!--¿ID o CLASE?-->
+      <h2 class="carrusel-titulo">Lecturas Recomendadas</h2>
+      <hr>
+      <!--Este div lo necesito para que los botones queden en la misma linea que los items :P-->
+      <div class="contenedor-carrusel">
+        <button class="btn-carrusel" id="btn-izq">&lt;</button>
+        <ul class="carrusel-lista">
+          <li class="carrusel-item">
+            <a href="pages/libros/el-retrato-de-dorian-gray.html">
+              <img src="img/dorian.jpg" width=300 alt="El retrato de Dorian Gray" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pages/libros/meditaciones.html">
+              <img src="img/meditaciones.jpg" width=300 alt="Meditaciones" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pages/libros/moby-dick.html">
+              <img src="img/mobydick.jpg" width=300 alt="Moby Dick" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pages/libros/meditaciones.html">
+              <img src="img/meditaciones.jpg" width=300 alt="Meditaciones" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pages/libros/moby-dick.html">
+              <img src="img/mobydick.jpg" width=300 alt="Moby Dick" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pages/libros/meditaciones.html">
+              <img src="img/meditaciones.jpg" width=300 alt="Meditaciones" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pages/libros/moby-dick.html">
+              <img src="img/mobydick.jpg" width=300 alt="Moby Dick" />
+            </a>
+          </li>
+        </ul>
+        <button class="btn-carrusel" id="btn-der">&gt;</button>
+      </div>
     </section>
     <section class="recomendados">
       <h2>Recomendados</h2>
@@ -90,22 +112,22 @@
       </article>
     </section>
   </main>
-  <footer class = "footer">
+  <footer class="footer">
     <ul>
       <li>
-        <a class = "link-social" href="https://www.instagram.com/paperbox"><i>instagram</i></a>
+        <a class="link-social" href="https://www.instagram.com/paperbox"><i>instagram</i></a>
       </li>
       <li>
-        <a class = "link-social" href="https://es.wikipedia.org/wiki/twitter"><i>twitter</i></a>
+        <a class="link-social" href="https://es.wikipedia.org/wiki/twitter"><i>twitter</i></a>
       </li>
       <li>
-        <a class = "link-social" href="https://www.discord.com"><i>discord</i></a>
+        <a class="link-social" href="https://www.discord.com"><i>discord</i></a>
       </li>
     </ul>
-    <a href="pages/terminos-y-condiciones.html">Términos y Condiciones</a>
-    <a href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
-    <a href="pages/ayuda.html">Ayuda</a>
-    <a href="pages/nosotros.html">Nosotros</a>
+    <a class="link-adicionales" href="pages/terminos-y-condiciones.html">Términos y Condiciones</a>
+    <a class="link-adicionales" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+    <a class="link-adicionales" href="pages/ayuda.html">Ayuda</a>
+    <a class="link-adicionales" href="pages/nosotros.html">Nosotros</a>
     PaperBox 2026
   </footer>
 </body>
