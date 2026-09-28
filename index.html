@@ -35,7 +35,8 @@
   </header>
   <main>
     <h2>Un espacio para compartir tus experiencias lectoras</h2>
-    <a href="pages/registro.html">Registrate!</a>
+    <!-- El registro no iría acá porque ya estamos logeados en la página -->
+    <!-- <a href="pages/registro.html">Registrate!</a> -->
     <section class="carrusel"> <!--¿ID o CLASE?-->
       <h2 class="carrusel-titulo">Lecturas Recomendadas</h2>
       <hr>
@@ -82,17 +83,21 @@
         <button class="btn-carrusel" id="btn-der">&gt;</button>
       </div>
     </section>
-    <section class="recomendados">
-      <h2>Recomendados</h2>
-      <ul>
+    <section class="seccion-tendencia">
+      <h2 class="tendencia-titulo">En tendecia ahora</h2>
+      <hr>
+      <ul class="lista-tendencia">
         <li>
-          <img src="img/dorian.jpg" width=300 alt="El retrato de Dorian Gray" />
+          <img class="tendencia-item-imagen" src="img/DorianGray.jpg" width=300 alt="El retrato de Dorian Gray" />
         </li>
         <li>
-          <img src="img/meditaciones.jpg" width=300 alt="Meditaciones" />
+          <img class="tendencia-item-imagen" src="img/LaOdisea.jpg" width=300 alt="Odisea" />
         </li>
         <li>
-          <img src="img/mobydick.jpg" width=300 alt="Moby Dick" />
+          <img class="tendencia-item-imagen" src="img/mobydick.jpg" width=300 alt="Moby Dick" />
+        </li>
+        <li>
+          <img class="tendencia-item-imagen" src="img/LosJuegosDelHambre.jpg" width=300 alt="Moby Dick" />
         </li>
       </ul>
     </section>
