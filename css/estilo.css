@@ -8,6 +8,7 @@
     --color-texto-hover: #ffffff;
     --color-boton: #0c350f;
     --color-boton-hover: #0f4213;
+    --color-boton-registro: yellow;
 }
 
 
@@ -345,4 +346,15 @@ body {
 .link-adicionales:hover {
     color: var(--color-texto-hover);
     transform: translateY(-2px);
+}
+
+.tabla-registro {
+    margin: 0 auto;
+    margin-top: 100px;
+    border-spacing: 0 15px; /*para table, espacioHorizontal - espacioVertical*/
+    color: var(--color-fuente-principal)
+}
+
+.boton{
+    background-color:var(--color-boton)
 }
