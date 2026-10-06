@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-
-    --color-fondo-principal: #091526;
-    --color-header: #070645;
-    --color-footer: #2b4672;
-    --color-fuente-principal:antiquewhite;
-    --color-accion-hover: red;
-    --color-boton: #312b72;
+:root {
+    --color-fondo-principal: #27283D;
+    --color-secundario: rgb(18, 19, 43);
+    --color-terciario: #45466B;
+    --color-fuente-principal: #f8e7d0;
+    --color-texto-hover: #ffffff;
+    --color-boton: #0c350f;
+    --color-boton-hover: #0f4213;
     --color-boton-registro: yellow;
-
-
-
 }
 
 
 header {
-    background-color: var(--color-header);
+    background-color: var(--color-secundario);
     width: 100%;
 }
 
@@ -30,6 +27,9 @@ header section {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+
+    font-weight: bold;
+    font-size: 20px;
 }
 
 header h1 {
@@ -58,7 +58,7 @@ header a {
 
 header nav a:hover {
     /* Los items de header cuando les paso el ratón por arriba.*/
-    color: var(--color-accion-hover);
+    color: var(--color-texto-hover);
 }
 
 #log {
@@ -74,8 +74,8 @@ header nav a:hover {
 }
 
 #log:hover {
-    background-color: var(--color-accion-hover);
-    color: var(--color-fuente-principal);
+    background-color: var(--color-boton-hover);
+    color: var(--color-texto-hover);
     transform: scale(1.1);
 }
 
@@ -87,7 +87,7 @@ header nav a:hover {
 
 #search input[type="text"] {
     padding: 3px 0px;
-    background-color: rgb(160, 160, 160);
+    background-color: #6F707D;
     border: none;
     border-radius: 5px 0px 0px 5px;
     font-size: 15px;
@@ -95,7 +95,7 @@ header nav a:hover {
 }
 
 #search input[type="text"]:hover {
-    background-color: rgb(145, 145, 145);
+    background-color: #797A92;
 }
 
 #search input[type="text"]:focus {
@@ -106,7 +106,7 @@ header nav a:hover {
 
 #search button[type="submit"] {
     padding: 2px 5px;
-    background-color: rgb(200, 200, 200);
+    background-color: #8d8eaa;
     border: none;
     border-radius: 0px 5px 5px 0px;
     font-size: 13px;
@@ -127,14 +127,15 @@ main {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: antiquewhite;
-    background-color: #062445;
+    color: var(--color-fuente-principal);
+    background-color: var(--color-fondo-principal);
     margin: 0;
     padding: 0;
 }
 
 .carrusel-titulo {
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .contenedor-carrusel {
@@ -191,8 +192,8 @@ body {
 }
 
 .btn-carrusel {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background-color: #191a1b6e;
+    color: var(--color-fuente-principal);
     border: none;
     margin: 5px;
     font-size: 24px;
@@ -205,12 +206,14 @@ body {
 }
 
 .btn-carrusel:hover {
-    background-color: rgba(40, 40, 40, 0.9);
+    background-color: #1212136e;
     transform: none;
 }
 
 .tendencia-titulo {
-    font-size: 17px;
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .lista-tendencia {
@@ -243,7 +246,7 @@ body {
     display: grid;
     grid-template-columns: 180px 1fr;
     gap: 20px;
-    border: 2px solid rgb(89, 88, 161);
+    border: 2px solid var(--color-terciario);
     border-radius: 8px;
     padding: 5px;
     /* box-sizing: border-box; */
@@ -293,52 +296,65 @@ body {
 }
 
 .footer {
-    background-color: #2c3440;
+    background-color: var(--color-secundario);
     padding: 32px 0;
 }
 
+.footer-contenido {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 12px;
+}
+
 .footer ul {
-    background-color: #2c3440;
     list-style: none;
     display: flex;
     /*en fila*/
     gap: 24px;
+
+}
+
+.footer p {
+    font-size: 12px;
+    color: #777777;
 }
 
 .link-social {
     text-decoration: none;
-    color: red;
+    color: #777777;
     display: inline-block;
     /*permite que se mueva y aun asi mantenga su espacio*/
     transition: transform 0.2s ease;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .link-social:hover {
-    color: #00e054;
-    transform: translateY(-2px); /*que suba*/
+    color: var(--color-texto-hover);
+    transform: translateY(-2px);
+    /*que suba*/
 }
 
 .link-adicionales {
     text-decoration: none;
-    color: greenyellow;
+    color: #777777;
+    font-size: 12px;
+    transition: transform 0.2s ease;
 }
 
-
+.link-adicionales:hover {
+    color: var(--color-texto-hover);
+    transform: translateY(-2px);
+}
 
 .tabla-registro {
     margin: 0 auto;
-    
     margin-top: 100px;
-  
     border-spacing: 0 15px; /*para table, espacioHorizontal - espacioVertical*/
     color: var(--color-fuente-principal)
-
 }
 
 .boton{
-
     background-color:var(--color-boton)
-
-
 }
