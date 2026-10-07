@@ -238,7 +238,8 @@ body {
 }
 
 .titulo-actividad {
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .post {
@@ -250,6 +251,7 @@ body {
     padding: 5px;
     /* box-sizing: border-box; */
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .imagen-post img {
@@ -257,18 +259,24 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 6px;
 }
 
 .contenido-post {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    text-align: left;
 }
 
 .header-post {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-secundario);
+    padding: 8px 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
 }
 
 .usuario-info {
@@ -282,6 +290,11 @@ body {
     border: 2px solid rgb(95, 95, 95)
 }
 
+.cuerpo-post {
+    text-align: left;
+    padding: 10px 0px;
+}
+
 .footer-post {
     display: flex;
     gap: 15px;
@@ -292,6 +305,37 @@ body {
 .footer-post a {
     color: antiquewhite;
     text-decoration: none;
+}
+
+.btn-like {
+    background: none;
+    border: none;
+    color: var(--color-fuente-principal);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.like-check {
+    display: none;
+}
+
+.like {
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.like:hover {
+    transform: scale(1.3);
+    color: var(--color-texto-hover);
+}
+
+.like-check:checked + .like{
+    color: #bd0000;
 }
 
 .footer {
