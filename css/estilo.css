@@ -8,7 +8,8 @@
     --color-texto-hover: #ffffff;
     --color-boton: #0c350f;
     --color-boton-hover: #0f4213;
-    --color-boton-registro: yellow;
+    --color-link-llamativo: #00e054;
+
 }
 
 
@@ -123,6 +124,7 @@ main {
     max-width: 950px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1;  
 }
 
 body {
@@ -131,6 +133,10 @@ body {
     background-color: var(--color-fondo-principal);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;  
+
 }
 
 .carrusel-titulo {
@@ -339,7 +345,7 @@ body {
     color: #bd0000;
 }
 
-.footer {
+footer {
     background-color: var(--color-secundario);
     padding: 32px 0;
 }
@@ -352,7 +358,7 @@ body {
     gap: 12px;
 }
 
-.footer ul {
+footer ul {
     list-style: none;
     display: flex;
     /*en fila*/
@@ -360,15 +366,17 @@ body {
 
 }
 
-.footer p {
+footer p {
+
     font-size: 12px;
     color: #777777;
+    margin-left: auto;
 }
 
 .link-social {
     text-decoration: none;
     color: #777777;
-    display: inline-block;
+    display: inline-block; 
     /*permite que se mueva y aun asi mantenga su espacio*/
     transition: transform 0.2s ease;
     font-size: 12px;
@@ -399,6 +407,47 @@ body {
     color: var(--color-fuente-principal)
 }
 
-.boton{
-    background-color:var(--color-boton)
-}
+.boton { 
+    background-color:var(--color-boton);
+    color: var(--color-fuente-principal);
+    border: none;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}    
+ .boton:hover {
+    background-color: #1212136e;
+    transform: none;
+ }
+
+  .tabla-registro td {
+    display: block;
+    margin-bottom: 4px; /*espacio entre celdas*/
+   
+ }
+
+ .tabla-registro label {
+    display: block;
+    margin-bottom: 5px; /*margen abajo del label*/
+   
+ }
+
+ .tabla-registro input[type="text"],
+ .tabla-registro input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+ }
+
+ .tabla-registro a {
+    color: var(--color-link-llamativo);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s ease;
+ 
+ }
