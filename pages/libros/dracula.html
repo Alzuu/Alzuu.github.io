@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro</title>
+    <link href="../../css/reset.css" rel="stylesheet">
+    <link href="../../css/estilo.css" rel="stylesheet">
+    <link href="../../css/libro.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>
+                <img src="../../assets/logo.svg" height=60>
+                <a href="../../index.html">PaperBox</a>
+            </h1>
+            <nav>
+                <a href="../../pages/perfil.html">PERFIL</a>
+                <a href="../../pages/catalogo.html">CATÁLOGO</a>
+                <a href="../../pages/amigos.html">AMIGOS</a>
+            </nav>
+            <form id="search">
+                <input type="text" inputmode="search">
+                <button type="submit" aria-label="Buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+            </form>
+            <button id="log">LOG</button>
+        </section>
+        <div id="caja-imagen">
+            <img src="../../img/banner/dracula-banner.jpg" alt="banner-dracula">
+            <div id="overlay-fondo"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="paneles">
+            <section class="panel-izq">
+                <img id="portada" src="../../img/portadas/Dracula.jpg" width="150" alt="portada-dracula">
+                <div id="caja-compras">
+                    <p>COMPRALO ACÁ</p>
+                    <ul>
+                        <li>
+                            <img src="../../img/logos/mercado-libre.png" width="20">
+                            <a class="link-compra"
+                                href="https://www.mercadolibre.com.ar/coleccion-maestros-del-fantastico-n2--dracula/up/MLAU4897236982">MERCADO
+                                LIBRE</a>
+                        </li>
+                        <li>
+                            <img src="../../img/logos/buscalibre.png" width="20">
+                            <a class="link-compra"
+                                href="https://www.buscalibre.com.ar/libro-dracula/9788415618836/p/50197980">BUSCA
+                                LIBRE</a>
+                        </li>
+                        <li>
+                            <img src="../../img/logos/amazon.png" width="20">
+                            <a class="link-compra"
+                                href="https://www.amazon.com/-/es/Dracula-Penguin-Clothbound-Classics-Stoker/dp/0141196882/ref=sr_1_5">AMAZON</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </section>
+            <section class="panel-ctl">
+                <section class="datos-libro">
+                    <h1 id="titulo">Drácula</h1>
+                    <h2 id="año">1897</h2>
+                    <a id="autor" href="../../pages/autores/bram-stoker.html">Bram Stoker</a>
+                </section>
+                <p id="descripcion">El viaje del Conde Drácula desde su castillo en Transilvania
+                    hasta
+                    Londres para propagar su maldición vampírica. Relatada a través de diarios y cartas, la trama sigue
+                    al
+                    abogado Jonathan Harker y al profesor Van Helsing en una intensa caza contra el tiempo para salvar a
+                    sus
+                    seres queridos y destruir al monstruo.</p>
+                <section class="personajes">
+                    <h2>Personajes</h2>
+                    <hr>
+                    <div class="contenedor-personajes">
+                        <ul class="lista-personajes">
+                            <li><span class="tag-personaje">Jonathan Harker</span></li>
+                            <li><span class="tag-personaje">Mina Murray</span></li>
+                            <li><span class="tag-personaje">Conde Drácula</span></li>
+                            <li><span class="tag-personaje">Abraham Van Helsing</span></li>
+                            <li><span class="tag-personaje">Dr. John Seward</span></li>
+                            <li><span class="tag-personaje">Arthur Holmwood</span></li>
+                            <li><span class="tag-personaje">Quincey Morris</span></li>
+                            <li><span class="tag-personaje">Lucy Westenra</span></li>
+                            <li><span class="tag-personaje">R. M. Renfield</span></li>
+                        </ul>
+
+                        <details id="capa-spoiler">
+                            <summary>
+                                <span>SPOILER</span>
+                            </summary>
+                        </details>
+                    </div>
+                </section>
+            </section>
+            <section class="panel-der">
+                <div id="botones-der">
+                    <button>Leído</button>
+                    <button>Me Gusta</button>
+                    <button>Lista</button>
+                </div>
+                <div class="contenedor-valoracion">
+                    <span class="valoracion-titulo">Valoralo!</span>
+                    <div class="calificacion-estrellas">
+                        <input type="radio" id="estrella-5" name="rating" value="5"><label for="estrella-5"
+                            title="5 estrellas">★</label>
+                        <input type="radio" id="estrella-4" name="rating" value="4"><label for="estrella-4"
+                            title="4 estrellas">★</label>
+                        <input type="radio" id="estrella-3" name="rating" value="3"><label for="estrella-3"
+                            title="3 estrellas">★</label>
+                        <input type="radio" id="estrella-2" name="rating" value="2"><label for="estrella-2"
+                            title="2 estrellas">★</label>
+                        <input type="radio" id="estrella-1" name="rating" value="1"><label for="estrella-1"
+                            title="1 estrella">★</label>
+                    </div>
+                </div>
+                <a>Mi actividad</a>
+                <a>LOG nuevo</a>
+                <a>Agregar a lista</a>
+                <h2>VALORACIONES</h2>
+                <hr>
+                <p>ACA VA UN DIAGRAMA DE BASTONES</p>
+            </section>
+        </section>
+        <section>
+            <h3>RESEÑAS DE AMIGOS</h3>
+            <hr>
+            <h3>RESEÑAS POPULARES</h3>
+            <hr>
+            <h3>RESEÑAS NUEVAS</h3>
+            <hr>
+        </section>
+        <section>
+            <h3>LIBROS RELACIONADOS</h3>
+            <hr>
+            <h3>LIBROS SIMILARES</h3>
+            <hr>
+            <ul class="lista-similares">
+                <li><img class="lista-similares-img" src="../../img/portadas/Frankeinstein.jpg" width="100"
+                        alt="frankenstein"></li>
+                <li> <img class="lista-similares-img" src=" ../../img/portadas/DrJeckyllAndMrHyde.jpg" width="100"
+                        alt="mrHyde"></li>
+                <li><img class="lista-similares-img" src="../../img/portadas/elFantasmaDeLaOpera.jpg" width="100"
+                        alt="fantOpera"></li>
+                <li><img class="lista-similares-img" src="../../img/portadas/elCuervo.jpg" width="100" alt="cuervo">
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+<footer>
+    <section class="footer-contenido">
+        <ul>
+            <li>
+                <a class="link-social" href="https://www.instagram.com/paperbox"><i>instagram</i></a>
+            </li>
+            <li>
+                <a class="link-social" href="https://es.wikipedia.org/wiki/twitter"><i>twitter</i></a>
+            </li>
+            <li>
+                <a class="link-social" href="https://www.discord.com"><i>discord</i></a>
+            </li>
+            <li>
+                <a class="link-adicionales" href="pages/terminos-y-condiciones.html">Términos y Condiciones</a>
+            </li>
+            <li>
+                <a class="link-adicionales" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </li>
+            <li>
+                <a class="link-adicionales" href="pages/ayuda.html">Ayuda</a>
+            </li>
+            <li>
+                <a class="link-adicionales" href="pages/nosotros.html">Nosotros</a>
+            </li>
+        </ul>
+        <p>PaperBox 2026</p>
+    </section>
+</footer>
+
+</html>
