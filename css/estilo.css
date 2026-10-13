@@ -229,7 +229,7 @@ body {
     padding: 12px 0px;
 }
 
-.lista-similares-img {
+.tendencia-item-imagen {
     width: 100%;
     height: 200px;
     margin: 0 10px;
@@ -239,7 +239,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.lista-similares-img:hover {
+.tendencia-item-imagen:hover {
     transform: scale(1.08);
     cursor: pointer;
 }
