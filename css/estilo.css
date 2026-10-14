@@ -216,22 +216,28 @@ body {
     transform: none;
 }
 
-.tendencia-titulo {
+.tendencia-titulo,
+.reciente-titulo,
+.favorito-titulo {
     padding-top: 7px;
     font-size: 15px;
     font-weight: bold;
 }
 
-.lista-tendencia {
+.lista-tendencia,
+.lista-lecturas-recientes,
+.lista-favoritos {
     display: flex;
     gap: 10px;
     list-style-type: none;
     padding: 12px 0px;
 }
 
-.lista-similares-img {
+.tendencia-item-imagen,
+.reciente-item-imagen,
+.favorito-item-imagen   {
     width: 100%;
-    height: 200px;
+    height: 300px;
     margin: 0 10px;
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -239,7 +245,9 @@ body {
     transition: transform 0.3s ease;
 }
 
-.lista-similares-img:hover {
+.tendencia-item-imagen:hover,
+.reciente-item-imagen:hover,
+.favorito-item-imagen:hover {
     transform: scale(1.08);
     cursor: pointer;
 }
