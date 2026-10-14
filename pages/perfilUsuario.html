@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html id="html" lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PaperBox es una página para crear reseñas y compartir experiencias lectoras">
+    <title>PaperBox</title>
+    <link href="../assets/logo.svg" rel="icon">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/estilo.css" rel="stylesheet">
+    <link href="../css/perfilUser.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>
+                <img src="../assets/logo.svg" height=60>
+                <a href="index.html">PaperBox</a>
+            </h1>
+            <nav>
+                <a href="pages/perfil.html">PERFIL</a>
+                <a href="pages/catalogo.html">CATÁLOGO</a>
+                <a href="pages/amigos.html">AMIGOS</a>
+            </nav>
+            <form id="search">
+                <input type="text" inputmode="search">
+                <button type="submit" aria-label="Buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+            </form>
+            <button id="log">LOG</button>
+        </section>
+    </header>
+
+    <main id=contenido>
+
+        <section class="header-de-perfil">
+
+            <div class="resumen-perfil">
+                <!--Contendra la foto de perfil, cantidad de seguidores, seguidos,libros leidos en el año, libros leidos en total-->
+
+                <img class="foto-usuario"
+                    src=https://preview.redd.it/can-we-universally-agree-this-is-one-of-the-best-walter-v0-4jrkz3hi3gp61.jpg?width=1080&crop=smart&auto=webp&s=131c8a82e11f21dc6569b632614543a7fa03e123
+                    width="80" height="80"> </img>
+
+                <h1 class="nombre-usuario">walterDawg33</h1>
+
+
+                <a href="#" class="boton-editar-perfil">Editar perfil</a>
+
+                <ul class=metricas-perfil>
+                    <li>
+                        <a href="#">
+                            <span class="valor-metrica"> 19 </span>
+                            <!-- para poder definirles distintos estilos span span-->
+                            <span class="tipo-metrica"> Seguidores </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="valor-metrica"> 30 </span>
+                            <!-- para poder definirles distintos estilos span span-->
+                            <span class="tipo-metrica"> Seguidos </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="valor-metrica"> 200 </span>
+                            <!-- para poder definirles distintos estilos al numero y tipo span span-->
+                            <span class="tipo-metrica"> Libros leidos </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="valor-metrica"> 200 </span>
+                            <!-- para poder definirles distintos estilos al numero y tipo span span-->
+                            <span class="tipo-metrica"> Leidos este año </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <nav class=navegacion-de-perfil> <!--Contendra los links para navegar el perfil-->
+
+                <ul class=lista-navegacion>
+
+                    <li class=item-navegacion>
+                        <a class=link-navegacion href="#"> Perfil </a>
+                    </li>
+                    <li class=item-navegacion>
+                        <a class=link-navegacion href="#"> Actividad </a>
+                    </li>
+                    <li class=item-navegacion>
+                        <a class=link-navegacion href="#"> Libros leidos </a>
+                    </li>
+                    <li class=item-navegacion>
+                        <a class=link-navegacion href="#"> Listas lectoras </a>
+                    </li>
+                    <li class=item-navegacion>
+                        <a class=link-navegacion href="#"> Reseñas </a>
+                    </li>
+                    <li class=item-navegacion>
+                        <a class=link-navegacion href="#"> Boxies </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+
+        <section class=libros-favoritos> <!--<section class=libros-favoritos> -->
+            <h2 class="favorito-titulo">Favoritos</h2>
+            <ul class="lista-favoritos">
+
+                <li>
+                    <img class="favorito-item-imagen" src="../img/portadas/DorianGray.jpg" width=300
+                        alt="El retrato de Dorian Gray" />
+                </li>
+                <li>
+                    <img class="favorito-item-imagen" src="../img/portadas/LaOdisea.jpg" width=300 alt="Odisea" />
+                </li>
+                <li>
+                    <img class="favorito-item-imagen" src="../img/portadas/mobydick.jpg" width=300 alt="Moby Dick" />
+                </li>
+            </ul>
+
+
+        </section>
+
+        <section class="lecturas-recientes"> <!--libtos leidos recientemente -->
+            <h2 class="reciente-titulo">Lecturas recientes</h2>
+            <ul class="lista-lecturas-recientes">
+                <li>
+                    <img class="reciente-item-imagen" src="../img/portadas/DorianGray.jpg" width=300
+                        alt="El retrato de Dorian Gray" />
+                </li>
+                <li>
+                    <img class="reciente-item-imagen" src="../img/portadas/LaOdisea.jpg" width=300 alt="Odisea" />
+                </li>
+                <li>
+                    <img class="reciente-item-imagen" src="../img/portadas/mobydick.jpg" width=300 alt="Moby Dick" />
+                </li>
+                <li>
+                    <img class="reciente-item-imagen" src="../img/portadas/LosJuegosDelHambre.jpg" width=300
+                        alt="Moby Dick" />
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section class="actividad-reciente"> <!--actividad reciente, puede incluir boxies o reseñas-->
+            <h2>Actividad reciente</h2>
+
+
+            <article class="Boxie">
+                <div class=portada-libro>
+                    <a href="../pages/libros/los-juegos-del-hambre.html">
+                        <img src="../img/portadas/LosJuegosDelHambre.jpg" width=150
+                            alt="crimen-y-castigo"><!--titulo jpg y ancho alto-->
+                    </a>
+                </div>
+                <div class="contenido-post">
+                    <section class="header-boxie">
+                        <!--En el perfil del usuario no necesito poner su usario ni su avatar. Se sobreentiende que es de ese usuario-->
+                        <h4 class=titulo-libro>Los juegos del hambre</h4>
+                        <span class="autor-libro "> Suzanne Collins</span>
+                        <span class="capitulo ">Capitulo 12</span>
+                        <time datetime="2026-09-21T20:00:00">23:04</time>
+                    </section>
+                    <section class=cuerpo-post>
+                        <p>anotacion sobre eeste capitulo¡¡¡</p>
+
+
+                        <div class=footer-post>
+                            <a href="pages/posts/post1.html#comentarios" class="comentarios">comentarios</a>
+                            <label class="contenedor-like">
+                                <input type="checkbox" class="like-check">
+                                <span class="like">♥</span>
+                            </label>
+                            <span class="contador-like">890</span>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <article class="Reseña">
+
+                <!--- COMPLETAR, tiene que tener estrellitas y se hace sobre todo el libro.......-->
+            </article>
+
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <section class="footer-contenido">
+            <ul>
+                <li>
+                    <a class="link-social" href="https://www.instagram.com/paperbox"><i>instagram</i></a>
+                </li>
+                <li>
+                    <a class="link-social" href="https://es.wikipedia.org/wiki/twitter"><i>twitter</i></a>
+                </li>
+                <li>
+                    <a class="link-social" href="https://www.discord.com"><i>discord</i></a>
+                </li>
+                <li>
+                    <a class="link-adicionales" href="pages/terminos-y-condiciones.html">Términos y Condiciones</a>
+                </li>
+                <li>
+                    <a class="link-adicionales" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                </li>
+                <li>
+                    <a class="link-adicionales" href="pages/ayuda.html">Ayuda</a>
+                </li>
+                <li>
+                    <a class="link-adicionales" href="pages/nosotros.html">Nosotros</a>
+                </li>
+
+            </ul>
+            <p>PaperBox 2026</p>
+        </section>
+    </footer>
+
+
+
+
+</body>
