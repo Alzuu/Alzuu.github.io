@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libro</title>
+    <link href="../../assets/paperboxLogoOscuro.svg" rel="icon">
+    <link href="../../css/libro.css" rel="stylesheet">
     <link href="../../css/reset.css" rel="stylesheet">
     <link href="../../css/estilo.css" rel="stylesheet">
-    <link href="../../css/libro.css" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <section>
             <h1>
-                <img src="../../assets/logo.svg" height=60>
-                <a href="../../index.html">PaperBox</a>
+                <img id="logo" src="../../assets/paperboxLogoClaro.png" height=60>
+                <a href="index.html">PaperBox</a>
             </h1>
             <nav>
-                <a href="../../pages/perfil.html">PERFIL</a>
-                <a href="../../pages/catalogo.html">CATÁLOGO</a>
-                <a href="../../pages/amigos.html">AMIGOS</a>
+                <a href="./pags/perfil.html">PERFIL</a>
+                <a href="pages/catalogo.html">CATÁLOGO</a>
+                <a href="pages/amigos.html">AMIGOS</a>
             </nav>
             <form id="search">
                 <input type="text" inputmode="search">
@@ -33,13 +35,12 @@
             </form>
             <button id="log">LOG</button>
         </section>
-        <div id="caja-imagen">
-            <img src="../../img/banner/dracula-banner.jpg" alt="banner-dracula">
-            <div id="overlay-fondo"></div>
-        </div>
     </header>
 
     <main>
+        <button id="btn-tema" class="btn-tema" type="button" aria-label="Cambiar a tema CLARO" title="Cambiar tema">
+            ☀
+        </button>
         <section class="paneles">
             <section class="panel-izq">
                 <img id="portada" src="../../img/portadas/Dracula.jpg" width="150" alt="portada-dracula">
@@ -180,6 +181,7 @@
             </ul>
         </section>
     </main>
+        <script type="module" src="../../js/main.js"></script>
 </body>
 <footer>
     <section class="footer-contenido">
