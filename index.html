@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="description" content="PaperBox es una página para crear reseñas y compartir experiencias lectoras">
   <title>PaperBox</title>
-  <link href="assets/logo.svg" rel="icon">
+  <link href="assets/paperboxLogoOscuro.svg" rel="icon">
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/estilo.css" rel="stylesheet">
 </head>
@@ -14,11 +14,11 @@
   <header>
     <section>
       <h1>
-        <img src="assets/logo.svg" height=60>
+        <img id="logo" src="assets/paperboxLogoClaro.png" height=60>
         <a href="index.html">PaperBox</a>
       </h1>
       <nav>
-        <a href="pages/perfil.html">PERFIL</a>
+        <a href="./pags/perfil.html">PERFIL</a>
         <a href="pages/catalogo.html">CATÁLOGO</a>
         <a href="pages/amigos.html">AMIGOS</a>
       </nav>
@@ -34,7 +34,11 @@
       <button id="log">LOG</button>
     </section>
   </header>
+
   <main>
+    <button id="btn-tema" class="btn-tema" type="button" aria-label="Cambiar a tema CLARO" title="Cambiar tema">
+      ☀
+    </button>
     <section class="carrusel">
       <h2 class="titulo-seccion">Lecturas Recomendadas</h2>
       <hr>
@@ -42,22 +46,22 @@
         <button class="btn-carrusel" id="btn-izq">&lt;</button>
         <ul class="carrusel-lista">
           <li class="carrusel-item">
-            <a href="pages/libros/dracula.html">
+            <a href="./pags/libros/dracula.html">
               <img src="img/portadas/Frankeinstein.jpg" width=300 alt="Frankeinstein" />
             </a>
           </li>
           <li class="carrusel-item">
-            <a href="pages/libros/dracula.html">
+            <a href="./pags/libros/dracula.html">
               <img src="img/portadas/PedroParamo.jpg" width=300 alt="PedroParamo" />
             </a>
           </li>
           <li class="carrusel-item">
-            <a href="pages/libros/dracula.html">
+            <a href="./pags/libros/dracula.html">
               <img src="img/portadas/DonQuijote.jpg" width=300 alt="DonQuijote" />
             </a>
           </li>
           <li class="carrusel-item">
-            <a href="pages/libros/dracula.html">
+            <a href="./pags/libros/dracula.html">
               <img src="img/portadas/CrimenYCastigo.jpg" width=300 alt="CrimenYCastigo" />
             </a>
           </li>
@@ -170,6 +174,7 @@
       </article>
     </section>
   </main>
+
   <footer>
     <section class="footer-contenido">
       <ul>
@@ -198,7 +203,7 @@
       <p>PaperBox 2026</p>
     </section>
   </footer>
-  <script src="js/main.js" defer></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

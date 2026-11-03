@@ -1,13 +1,28 @@
 :root {
-    --color-fondo-principal: #27283D;
-    --color-secundario: rgb(18, 19, 43);
-    --color-terciario: #45466B;
-    --color-fuente-principal: #f8e7d0;
-    --color-texto-hover: #ffffff;
-    --color-boton: #0c350f;
-    --color-boton-hover: #0f4213;
-    --color-link-llamativo: #00e054;
+    --color-fondo-principal: #101827;
+    --color-secundario: #1C2B43;
+    --color-terciario: #263B59;
+    --color-fuente-principal: #F0F4FA;
+    /*Cambiar por texto secundario*/
+    --color-texto-hover: #A9B8CC;
+    --color-boton: #315B8A;
+    --color-boton-hover: #4075AA;
+    --color-link-llamativo: #70B7E8;
 
+    --color-busqueda-hover: #344D70;
+}
+
+body.modo-claro {
+    --color-fondo-principal: #F5F0E6;
+    --color-secundario: #E8DDCB;
+    --color-terciario: #D8CBB8;
+    --color-fuente-principal: #30271F;
+    --color-texto-hover: #786B5D;
+    --color-boton: #A65D42;
+    --color-boton-hover: #874832;
+    --color-link-llamativo: #B66A4B;
+
+    --color-busqueda-hover: #D8CBB8;
 }
 
 #caja-imagen {
@@ -159,7 +174,7 @@
 #capa-spoiler span {
     width: 100%;
     height: 100%;
-    background-color: rgba(23, 24, 38, 0.85);
+    background-color: color-mix(in srgb, var(--color-secundario) 75%, transparent);
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
