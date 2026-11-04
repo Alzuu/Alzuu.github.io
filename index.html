@@ -8,6 +8,7 @@
   <link href="assets/paperboxLogoOscuro.svg" rel="icon">
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/estilo.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,9 +19,9 @@
         <a href="index.html">PaperBox</a>
       </h1>
       <nav>
-        <a href="./pags/perfil.html">PERFIL</a>
-        <a href="pages/catalogo.html">CATÁLOGO</a>
-        <a href="pages/amigos.html">AMIGOS</a>
+        <a href="/pags/perfil.html">PERFIL</a>
+        <a href="/pags/catalogo.html">CATÁLOGO</a>
+        <a href="/pags/amigos.html">AMIGOS</a>
       </nav>
       <form id="search">
         <input type="text" inputmode="search">
@@ -40,8 +41,14 @@
       ☀
     </button>
     <section class="carrusel">
-      <h2 class="titulo-seccion">Lecturas Recomendadas</h2>
+
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion">Lecturas Recomendadas</h2>
+        <a class="ver-mas" href="/pags/catalogoMasRecomendados.html">ver más</a>
+      </div>
+
       <hr>
+
       <div class="contenedor-carrusel">
         <button class="btn-carrusel" id="btn-izq">&lt;</button>
         <ul class="carrusel-lista">
@@ -83,10 +90,20 @@
         </ul>
         <button class="btn-carrusel" id="btn-der">&gt;</button>
       </div>
+
     </section>
+
+    <br>
+
     <section class="seccion-tendencia">
-      <h2 class="titulo-seccion">En tendecia ahora</h2>
+
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion">En tendencia ahora</h2>
+        <a class="ver-mas" href="/pags/catalogoMasTendencia.html">ver más</a>
+      </div>
+
       <hr>
+
       <ul class="lista-tendencia">
         <li>
           <img class="tendencia-item-imagen" src="img/portadas/DorianGray.jpg" width=300
@@ -103,9 +120,18 @@
         </li>
       </ul>
     </section>
+
+    <br>
+
     <section class="actividad-popular">
-      <h2 class="titulo-seccion">Actividad Popular</h2>
+
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion">Actividad popular</h2>
+        <a class="ver-mas" href="/pags/catalogoMasActPopular.html">ver más</a>
+      </div>
+
       <hr>
+
       <article class="post">
         <div class="imagen-post">
           <a href="pages/libros/moby-dick.html">
@@ -135,6 +161,40 @@
               <span class="like">♥</span>
             </label>
             <span class="contador-like">777</span>
+          </footer>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="imagen-post">
+          <a href="pages/libros/gato-Murr.html">
+            <img src="img/portadas/GatoMurr.jpg" width=150 alt="gatoMurr" />
+          </a>
+        </div>
+        <div class="contenido-post">
+          <header class="header-post">
+            <div class="usuario-info">
+              <img class="foto-usuario" src="img/noticias/gatito8.jpg" width=50 alt="Cat" />
+              <a class="nombre-post" href="pages/personas/HermanMelville.html">
+                <h3>Intransigent Cat</h3>
+              </a>
+            </div>
+            <a class="fecha-post" href="pages/posts/post1.html">
+              <time datetime="2026-09-21T20:00:00">Cat Time</time>
+            </a>
+          </header>
+          <div class="cuerpo-post">
+            <p>Miau miau miau miau</p>
+            <p>Miau miau miau</p>
+            <p>Miau</p>
+          </div>
+          <footer class="footer-post">
+            <a href="pages/posts/post1.html#comentarios" class="comentarios">comentarios</a>
+            <label class="contenedor-like">
+              <input type="checkbox" class="like-check">
+              <span class="like">♥</span>
+            </label>
+            <span class="contador-like">9999999</span>
           </footer>
         </div>
       </article>
@@ -172,6 +232,68 @@
           </footer>
         </div>
       </article>
+    </section>
+
+    <br>
+
+    <section class="seccion-noticias">
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion">Noticias</h2>
+        <a class="ver-mas" href="/pags/catalogoMasTendencia.html">ver más</a>
+      </div>
+
+      <hr>
+
+      <section class="noticias">
+        <article class="noticia">
+          <img src="/img/noticias/gatito1.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 1</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="/img/noticias/gatito2.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 2</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="/img/noticias/gatito3.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 3</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="/img/noticias/gatito4.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 4</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="/img/noticias/gatito5.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Colmillitos, el gato que inspiro a Drácula</h3>
+            <p class="cuerpo-noticia">El gato en el que Bram Stoker se basó para crear la famosa historia del vampiro que todos conocemos</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="/img/noticias/gatito6.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 6</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+      </section>
     </section>
   </main>
 

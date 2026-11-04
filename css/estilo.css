@@ -180,12 +180,29 @@ body {
 
 }
 
+.encabezado-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .titulo-seccion,
 .reciente-titulo,
 .favorito-titulo {
     padding-top: 7px;
     font-size: 15px;
     font-weight: bold;
+}
+
+.ver-mas {
+    color: var(--color-fuente-principal);
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.ver-mas:hover {
+    color: var(--color-texto-hover);
 }
 
 .contenedor-carrusel {
