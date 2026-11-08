@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html id="html" lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="PaperBox es una página para crear reseñas y compartir experiencias lectoras">
+  <title>PaperBox</title>
+  <link href="assets/logo/paperboxLogoOscuro.svg" rel="icon">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1>
+        <img id="logo" src="assets/logo/paperboxLogoClaro.png" height=60>
+        <a href="index.html">PaperBox</a>
+      </h1>
+      <nav>
+        <a href="pags/perfil.html">PERFIL</a>
+        <a href="pags/catalogo.html">CATÁLOGO</a>
+        <a href="pags/amigos.html">AMIGOS</a>
+      </nav>
+      <form id="search">
+        <input type="text" inputmode="search">
+        <button type="submit" aria-label="Buscar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+      </form>
+      <button id="log">LOG</button>
+    </section>
+  </header>
+
+  <main>
+    <button id="btn-tema" class="btn-tema" type="button" aria-label="Cambiar a tema CLARO" title="Cambiar tema">
+      ☀
+    </button>
+    <section class="carrusel">
+
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion">Lecturas Recomendadas</h2>
+        <a class="ver-mas" href="pags/catalogoMasRecomendados.html">ver más</a>
+      </div>
+
+      <hr>
+
+      <div class="contenedor-carrusel">
+        <button class="btn-carrusel" id="btn-izq">&lt;</button>
+        <ul class="carrusel-lista">
+          <li class="carrusel-item">
+            <a href="pags/libros/dracula.html">
+              <img src="assets/img/portadas/Frankeinstein.jpg" width=300 alt="Frankeinstein" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pags/libros/dracula.html">
+              <img src="assets/img/portadas/PedroParamo.jpg" width=300 alt="PedroParamo" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pags/libros/dracula.html">
+              <img src="assets/img/portadas/DonQuijote.jpg" width=300 alt="DonQuijote" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pags/libros/dracula.html">
+              <img src="assets/img/portadas/CrimenYCastigo.jpg" width=300 alt="CrimenYCastigo" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pags/libros/dracula.html">
+              <img src="assets/img/portadas/Dracula.jpg" width=300 alt="Dracula" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pags/libros/dracula.html">
+              <img src="assets/img/portadas/DrJeckyllAndMrHyde.jpg" width=300 alt="JeckyllAndHyde" />
+            </a>
+          </li>
+          <li class="carrusel-item">
+            <a href="pags/libros/dracula.html">
+              <img src="assets/img/portadas/SherlockHolmes.jpg" width=300 alt="SherlockHolmes" />
+            </a>
+          </li>
+        </ul>
+        <button class="btn-carrusel" id="btn-der">&gt;</button>
+      </div>
+
+    </section>
+
+    <br>
+
+    <section class="seccion-tendencia">
+
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion">En tendencia ahora</h2>
+        <a class="ver-mas" href="pags/catalogoMasTendencia.html">ver más</a>
+      </div>
+
+      <hr>
+
+      <ul class="lista-tendencia">
+        <li>
+          <img class="tendencia-item-imagen" src="assets/img/portadas/DorianGray.jpg" width=300
+            alt="El retrato de Dorian Gray" />
+        </li>
+        <li>
+          <img class="tendencia-item-imagen" src="assets/img/portadas/LaOdisea.jpg" width=300 alt="Odisea" />
+        </li>
+        <li>
+          <img class="tendencia-item-imagen" src="assets/img/portadas/mobydick.jpg" width=300 alt="Moby Dick" />
+        </li>
+        <li>
+          <img class="tendencia-item-imagen" src="assets/img/portadas/LosJuegosDelHambre.jpg" width=300 alt="Hunger Games" />
+        </li>
+      </ul>
+    </section>
+
+    <br>
+
+    <section class="actividad-popular">
+
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion">Actividad popular</h2>
+        <a class="ver-mas" href="pags/catalogoMasActPopular.html">ver más</a>
+      </div>
+
+      <hr>
+
+      <article class="post">
+        <div class="imagen-post">
+          <a href="pags/libros/moby-dick.html">
+            <img src="assets/img/portadas/mobydick.jpg" width=150 alt="moby-dick" />
+          </a>
+        </div>
+        <div class="contenido-post">
+          <header class="header-post">
+            <div class="usuario-info">
+              <img class="foto-usuario" src="assets/img/perfil/HermanMelville.jpg" width=50 alt="HermanMelville" />
+              <a class="nombre-post" href="pags/personas/HermanMelville.html">
+                <h3>Herman Melville</h3>
+              </a>
+            </div>
+            <a class="fecha-post" href="pags/posts/post1.html">
+              <time datetime="2026-09-21T20:00:00">20:00</time>
+            </a>
+          </header>
+          <div class="cuerpo-post">
+            <p>Ismael en la ciudad: "Un asco la sociedad. Un asco la vida. Ojalá zarpar al mar y acabarlo todo."</p>
+            <p>Ismael después de dormir desnudo en la misma cama que Queequeg: "Tal vez la vida es bella..."</p>
+          </div>
+          <footer class="footer-post">
+            <a href="pags/posts/post1.html#comentarios" class="comentarios">comentarios</a>
+            <label class="contenedor-like">
+              <input type="checkbox" class="like-check">
+              <span class="like">♥</span>
+            </label>
+            <span class="contador-like">777</span>
+          </footer>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="imagen-post">
+          <a href="pags/libros/gato-Murr.html">
+            <img src="assets/img/portadas/GatoMurr.jpg" width=150 alt="gatoMurr" />
+          </a>
+        </div>
+        <div class="contenido-post">
+          <header class="header-post">
+            <div class="usuario-info">
+              <img class="foto-usuario" src="assets/img/noticias/gatito8.jpg" width=50 alt="Cat" />
+              <a class="nombre-post" href="pages/personas/HermanMelville.html">
+                <h3>Intransigent Cat</h3>
+              </a>
+            </div>
+            <a class="fecha-post" href="pags/posts/post1.html">
+              <time datetime="2026-09-21T20:00:00">Cat Time</time>
+            </a>
+          </header>
+          <div class="cuerpo-post">
+            <p>Miau miau miau miau</p>
+            <p>Miau miau miau</p>
+            <p>Miau</p>
+          </div>
+          <footer class="footer-post">
+            <a href="pags/posts/post1.html#comentarios" class="comentarios">comentarios</a>
+            <label class="contenedor-like">
+              <input type="checkbox" class="like-check">
+              <span class="like">♥</span>
+            </label>
+            <span class="contador-like">9999999</span>
+          </footer>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="imagen-post">
+          <a href="pags/libros/crimen-y-castigo.html">
+            <img src="assets/img/portadas/CrimenYCastigo.jpg" width=150 alt="crimen-y-castigo" />
+          </a>
+        </div>
+        <div class="contenido-post">
+          <header class="header-post">
+            <div class="usuario-info">
+              <img class="foto-usuario" src="assets/img/perfil/FiodorDostov.jpg" width=50 alt="Fiodor Dostoievski" />
+              <a class="nombre-post" href="pags/personas/FiodorDostov.html">
+                <h3>Fiodor Dostov</h3>
+              </a>
+            </div>
+            <a class="fecha-post" href="pags/posts/post2.html">
+              <time datetime="2026-09-21T20:00:00">23:04</time>
+            </a>
+          </header>
+          <div class="cuerpo-post">
+            <p>Raskolnikov quería probar si era un genio incomprendido o un piojo. </p>
+            <p>Era simple, un hachazo a una vieja usurera y a cobrar.</p>
+            <p>La realidad, 600 PAGINAS de culpa, fiebre y delirio</p>
+          </div>
+          <footer class="footer-post">
+            <a href="pags/posts/post1.html#comentarios" class="comentarios">comentarios</a>
+            <label class="contenedor-like">
+              <input type="checkbox" class="like-check">
+              <span class="like">♥</span>
+            </label>
+            <span class="contador-like">890</span>
+          </footer>
+        </div>
+      </article>
+    </section>
+
+    <br>
+
+    <section class="seccion-noticias">
+      <div class="encabezado-seccion">
+        <h2 class="titulo-seccion">Noticias</h2>
+        <a class="ver-mas" href="/pags/catalogoMasTendencia.html">ver más</a>
+      </div>
+
+      <hr>
+
+      <section class="noticias">
+        <article class="noticia">
+          <img src="assets/img/noticias/gatito1.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 1</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="assets/img/noticias/gatito2.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 2</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="assets/img/noticias/gatito3.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 3</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="assets/img/noticias/gatito4.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 4</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="assets/img/noticias/gatito5.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Colmillitos, el gato que inspiro a Drácula</h3>
+            <p class="cuerpo-noticia">El gato en el que Bram Stoker se basó para crear la famosa historia del vampiro que todos conocemos</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+        <article class="noticia">
+          <img src="assets/img/noticias/gatito6.jpg" alt="img-noticia1">
+          <div class="contenido-noticia">
+            <h3 class="titulo-noticia">Titulo noticia 6</h3>
+            <p class="cuerpo-noticia">Esta es la descripcion de una noticia</p>
+            <a href="#" class="card-link">Leer más</a>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer-contenido">
+      <ul>
+        <li>
+          <a class="link-social" href="https://www.instagram.com/paperbox"><i>instagram</i></a>
+        </li>
+        <li>
+          <a class="link-social" href="https://es.wikipedia.org/wiki/twitter"><i>twitter</i></a>
+        </li>
+        <li>
+          <a class="link-social" href="https://www.discord.com"><i>discord</i></a>
+        </li>
+        <li>
+          <a class="link-adicionales" href="pags/terminos-y-condiciones.html">Términos y Condiciones</a>
+        </li>
+        <li>
+          <a class="link-adicionales" href="pags/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+        </li>
+        <li>
+          <a class="link-adicionales" href="pags/ayuda.html">Ayuda</a>
+        </li>
+        <li>
+          <a class="link-adicionales" href="pags/nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+      <p>PaperBox 2026</p>
+    </section>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
