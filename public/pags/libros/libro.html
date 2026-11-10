@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro</title>
+    <link href="../../assets/logo/paperboxLogoOscuro.svg" rel="icon">
+    <link href="../../css/libro.css" rel="stylesheet">
+    <link href="../../css/reset.css" rel="stylesheet">
+    <link href="../../css/estilo.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>
+                <img id="logo" src="../../assets/logo/paperboxLogoClaro.png" height=60>
+                <a href="../../index.html">PaperBox</a>
+            </h1>
+            <nav>
+                <a href="./pags/perfil.html">PERFIL</a>
+                <a href="pages/catalogo.html">CATÁLOGO</a>
+                <a href="pages/amigos.html">AMIGOS</a>
+            </nav>
+            <form id="search">
+                <input type="text" inputmode="search">
+                <button type="submit" aria-label="Buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+            </form>
+            <button id="log">LOG</button>
+        </section>
+    </header>
+
+    <button id="btn-tema" class="btn-tema" type="button" aria-label="Cambiar a tema CLARO" title="Cambiar tema">
+        ☀
+    </button>
+    <main>
+        <section class="paneles">
+            <section class="panel-izq">
+                <img id="portada" src="" width="150" alt="portada del libro">
+                <div id="caja-compras">
+                    <p>COMPRALO ACÁ</p>
+                    <ul>
+                        <li>
+                            <!-- Estos los tengo que cargar por js-->
+                            <img src="../../assets/img/logos/mercado-libre.png" width="20">
+                            <a class="link-compra"
+                                href="https://www.mercadolibre.com.ar/coleccion-maestros-del-fantastico-n2--dracula/up/MLAU4897236982">MERCADO
+                                LIBRE</a>
+                        </li>
+                        <li>
+                            <img src="../../assets/img/logos/buscalibre.png" width="20">
+                            <a class="link-compra"
+                                href="https://www.buscalibre.com.ar/libro-dracula/9788415618836/p/50197980">BUSCA
+                                LIBRE</a>
+                        </li>
+                        <li>
+                            <img src="../../assets/img/logos/amazon.png" width="20">
+                            <a class="link-compra"
+                                href="https://www.amazon.com/-/es/Dracula-Penguin-Clothbound-Classics-Stoker/dp/0141196882/ref=sr_1_5">AMAZON</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="panel-ctl">
+                <section class="datos-libro">
+                    <h1 id="titulo"></h1>
+                    <h2 id="año"></h2>
+                    <a id="autor" href="#"></a>
+                </section>
+                <p id="descripcion"></p>
+                <section class="personajes">
+                    <h2>Personajes</h2>
+                    <hr>
+                    <div class="contenedor-personajes">
+                        <ul class="lista-personajes">
+                        </ul>
+
+                        <details id="capa-spoiler">
+                            <summary>
+                                <span>SPOILER</span>
+                            </summary>
+                        </details>
+                    </div>
+                </section>
+            </section>
+
+            <section class="panel-der">
+                <div id="botones-der">
+                    <button>Leído</button>
+                    <button>Me Gusta</button>
+                    <button>Lista</button>
+                </div>
+                <div class="contenedor-valoracion">
+                    <span class="valoracion-titulo">Valoralo!</span>
+                    <div class="calificacion-estrellas">
+                        <input type="radio" id="estrella-5" name="rating" value="5"><label for="estrella-5"
+                            title="5 estrellas">★</label>
+                        <input type="radio" id="estrella-4" name="rating" value="4"><label for="estrella-4"
+                            title="4 estrellas">★</label>
+                        <input type="radio" id="estrella-3" name="rating" value="3"><label for="estrella-3"
+                            title="3 estrellas">★</label>
+                        <input type="radio" id="estrella-2" name="rating" value="2"><label for="estrella-2"
+                            title="2 estrellas">★</label>
+                        <input type="radio" id="estrella-1" name="rating" value="1"><label for="estrella-1"
+                            title="1 estrella">★</label>
+                    </div>
+                </div>
+                <a>Mi actividad</a>
+                <a>LOG nuevo</a>
+                <a>Agregar a lista</a>
+                <div class="contenedor-valoraciones">
+                    <h2>VALORACIONES</h2>
+                    <div class="diagrama-bastones">
+                        <!-- <div class="columna-bastoncito" title="1 Estrella: 3 votos">
+                            <span class="etiqueta-valor">1</span>
+                            <div class="bastoncito" style="height: 6px;"></div>
+                        </div>
+                        <div class="columna-bastoncito" title="2 Estrellas: 15 votos">
+                            <span class="etiqueta-valor">2</span>
+                            <div class="bastoncito" style="height: 30px;"></div>
+                        </div>
+                        <div class="columna-bastoncito" title="3 Estrellas: 45 votos">
+                            <span class="etiqueta-valor">3</span>
+                            <div class="bastoncito" style="height: 90px;"></div>
+                        </div>
+                        <div class="columna-bastoncito" title="4 Estrellas: 30 votos">
+                            <span class="etiqueta-valor">4</span>
+                            <div class="bastoncito" style="height: 60px;"></div>
+                        </div>
+                        <div class="columna-bastoncito" title="5 Estrellas: 7 votos">
+                            <span class="etiqueta-valor">5</span>
+                            <div class="bastoncito" style="height: 14px;"></div>
+                        </div> -->
+                    </div>
+            </section>
+        </section>
+        <section>
+            <h3>RESEÑAS DE AMIGOS</h3>
+            <hr>
+            <h3>RESEÑAS POPULARES</h3>
+            <hr>
+            <h3>RESEÑAS NUEVAS</h3>
+            <hr>
+        </section>
+        <section>
+            <h3>LIBROS RELACIONADOS</h3>
+            <hr>
+            <h3>LIBROS SIMILARES</h3>
+            <hr>
+            <ul class="lista-similares">
+                <!-- <li><img class="lista-similares-img" src="../../img/portadas/Frankeinstein.jpg" width="100"
+                        alt="frankenstein"></li>
+                <li> <img class="lista-similares-img" src=" ../../img/portadas/DrJeckyllAndMrHyde.jpg" width="100"
+                        alt="mrHyde"></li>
+                <li><img class="lista-similares-img" src="../../img/portadas/elFantasmaDeLaOpera.jpg" width="100"
+                        alt="fantOpera"></li>
+                <li><img class="lista-similares-img" src="../../img/portadas/elCuervo.jpg" width="100" alt="cuervo">
+                </li> -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-contenido">
+            <ul>
+                <li>
+                    <a class="link-social" href="https://www.instagram.com/paperbox"><i>instagram</i></a>
+                </li>
+                <li>
+                    <a class="link-social" href="https://es.wikipedia.org/wiki/twitter"><i>twitter</i></a>
+                </li>
+                <li>
+                    <a class="link-social" href="https://www.discord.com"><i>discord</i></a>
+                </li>
+                <li>
+                    <a class="link-adicionales" href="pages/terminos-y-condiciones.html">Términos y Condiciones</a>
+                </li>
+                <li>
+                    <a class="link-adicionales" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                </li>
+                <li>
+                    <a class="link-adicionales" href="pages/ayuda.html">Ayuda</a>
+                </li>
+                <li>
+                    <a class="link-adicionales" href="pages/nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+            <p>PaperBox 2026</p>
+        </section>
+    </footer>
+    <script type="module" src="../../js/main.js"></script>
+    <script type="module" src="../../js/componentes/libro.js"></script>
+</body>
+
+</html>

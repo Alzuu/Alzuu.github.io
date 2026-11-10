@@ -1,7 +1,7 @@
 let libros = [
     {
         id: 1, titulo: "El retrato de Dorian Gray", autor: "Oscar Wilde", anio: 1890,
-        portada: `assets/img/portadas/dorianGray.jpg`,
+        portada: `/assets/img/portadas/dorianGray.jpg`,
         descripcion: "",
         personajes: [
             "Basil Hallward", "Lord Henry 'Harry' Wotton", "Dorian Gray",
@@ -12,7 +12,7 @@ let libros = [
     },
     {
         id: 2, titulo: "Dracula", autor: "Bram Stoker", anio: 1890,
-        portada: `assets/img/portadas/dracula.jpg`,
+        portada: `/assets/img/portadas/dracula.jpg`,
         descripcion: "",
         personajes: [
            "Conde Drácula", "Jonathan Harker", "Mina Harker", "Lucy Westenra", 
@@ -22,7 +22,7 @@ let libros = [
     },
     {
         id: 3, titulo: "Frankenstein", autor: "Mary Shelley", anio: 1818,
-        portada: `assets/img/portadas/frankenstein.jpg`,
+        portada: `/assets/img/portadas/frankenstein.jpg`,
         descripcion: "",
         personajes: [
             "Victor Frankenstein", "La criatura", "Robert Walton", "Elizabeth Lavenza",
@@ -31,7 +31,7 @@ let libros = [
     },
     {
         id: 4, titulo: "Estudio en Escarlata", autor: "Sir Arthur Conan Doyle", anio: 1887,
-        portada: `assets/img/portadas/estudioEscarlata.jpg`,
+        portada: `/assets/img/portadas/estudioEscarlata.jpg`,
         descripcion: "",
         personajes: [
             "Sherlock Holmes", "Dr. John H. Watson", "Jefferson Hope", "John Ferrier",
@@ -41,7 +41,7 @@ let libros = [
     },
     {
         id: 5, titulo: "El señor de las moscas", autor: "William Golding", anio: 1954,
-        portada: `assets/img/portadas/señorMoscas.jpg`,
+        portada: `/assets/img/portadas/señorMoscas.jpg`,
         descripcion: "",
         personajes: [
            "Ralph", "Piggy", "Jack Merridew", "Simon", "Roger", "Sam y Eric"
@@ -49,7 +49,7 @@ let libros = [
     },
     {
         id: 6, titulo: "1984", autor: "George Orwell", anio: 1949,
-        portada: `assets/img/portadas/1984.jpg`,
+        portada: `/assets/img/portadas/1984.jpg`,
         descripcion: "",
         personajes: [
            "Winston Smith", "Julia", "O'Brien", "Emmanuel Goldstein", "Sr.Charrington",
@@ -58,7 +58,7 @@ let libros = [
     },
     {
         id: 7, titulo: "Tiburon", autor: "Peter Benchley", anio: 1974,
-        portada: `assets/img/portadas/tiburon.jpg`,
+        portada: `/assets/img/portadas/tiburon.jpg`,
         descripcion: "",
         personajes: [
             "Martin Brody", "Quint", "Matt Hooper", "Ellen Brody", "Larry Vaughan",
@@ -67,7 +67,7 @@ let libros = [
     },
     {
         id: 8, titulo: "20000 Leguas de Viaje Submarino", autor: "Julio Verne", anio: 1870,
-        portada: `assets/img/portadas/20000LeguasSubmarino.jpg`,
+        portada: `/assets/img/portadas/20000LeguasSubmarino.jpg`,
         descripcion: "",
         personajes: [
             "Pierre Arronax", "Conseil", "Ned Land", "Capitan Nemo"
@@ -75,7 +75,7 @@ let libros = [
     },
     {
         id: 9, titulo: "La Isla del Dr. Moreau", autor: "H.G. Wells", anio: 1896,
-        portada: `assets/img/portadas/moreau.jpg`,
+        portada: `/assets/img/portadas/moreau.jpg`,
         descripcion: "",
         personajes: [
             "Edward Prendick", "Doctor Moreau", "Montgomery", "M'ling", "puma",
@@ -85,7 +85,7 @@ let libros = [
     },
     {
         id: 10, titulo: "Miguel Strogoff", autor: "Julio Verne", anio: 1876,
-        portada: `assets/img/portadas/strogoff.jpg`,
+        portada: `/assets/img/portadas/strogoff.jpg`,
         descripcion: "",
         personajes: [
             "Miguel Strogoff", "Nadia Fedor", "Iván Ogareff", "Feofar Khan", "Marfa Strogoff",
