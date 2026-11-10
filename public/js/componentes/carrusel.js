@@ -6,7 +6,7 @@ export function botonesCarrusel() {
 
     // Cargar los libros desde mi API de forma dinámica.
     if (carrusel) {
-        fetch('/api/libros?cantidad=10&from=0')
+        fetch('/api/libros?cantidad=7&from=0')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('ERROR: Al obtener libros del server.')
@@ -23,7 +23,7 @@ export function botonesCarrusel() {
                     li.classList.add('carrusel-item')
 
                     li.innerHTML = `
-                       <a href="./pags/libros/dracula.html?id=${libro.id}">
+                        <a href="./pags/libros/libro.html?id=${libro.id}">
                             <img src="${libro.portada}" width="300" alt="${libro.titulo}" />
                         </a>
                     `
@@ -34,17 +34,20 @@ export function botonesCarrusel() {
                 console.error('Error al cargar el carrusel:', error);
             });
     }
-    botonSig.addEventListener("click", () => {
-        carrusel.scrollBy({
-            left: 300,
-            behavior: "smooth"
+    if (botonSig && botonPrev && carrusel) {
+        botonSig.addEventListener("click", () => {
+            carrusel.scrollBy({
+                left: 300,
+                behavior: "smooth"
+            })
         })
-    })
 
-    botonPrev.addEventListener("click", () => {
-        carrusel.scrollBy({
-            left: -300,
-            behavior: "smooth"
+        botonPrev.addEventListener("click", () => {
+            carrusel.scrollBy({
+                left: -300,
+                behavior: "smooth"
+            })
         })
-    })
+    }
+
 }
