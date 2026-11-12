@@ -115,6 +115,22 @@ const getLibroPorID = (req, res) => {
     res.json(libro)
 }
 
+// GET: Obtener LIBRO por nombre (para la barra de busqudae)
+const getLibroPorTitulo = (req, res) => {
+    const titulo = req.query.titulo?.trim().toLowerCase()
+
+    if(titulo){
+        const resultados = libros.filter(libro =>
+            libro.titulo.toLowerCase().includes(titulo)
+        )
+        res.json(resultados)
+    } else {
+        return res.status(400).json({
+            error: 'SE TIENE QUE INGRESAR UN TITULO'
+        })
+    }
+}
+
 // POST: Crear un recurso (LIBRO) nuevo.
 const postLibro = (req, res) => {
     const { titulo, autor, anio } = req.body
@@ -165,6 +181,7 @@ const putLibro = (req, res) => {
 module.exports = {
     getLibros,
     getLibroPorID,
+    getLibroPorTitulo,
     postLibro,
     putLibro
 }
